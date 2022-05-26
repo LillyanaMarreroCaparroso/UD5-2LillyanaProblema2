@@ -18,6 +18,7 @@ public class VeredaGT implements Vehicle {
     @Override
     public float energyLevel() {
         float energ = (float)this.energy;
+        System.out.println("Carga actual: ");
         return energ;
     }
 

@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        VeredaGT vereda3000 = new VeredaGT("64JFDSJ", 20, 10);
+        VeredaGT vereda3000 = new VeredaGT("64JFDSJ", 20, 4);
 
         //mostramos el nivel de carga
         System.out.println(vereda3000.energyLevel());
