@@ -24,10 +24,6 @@ public class Main {
         vereda3000.move();
         //mostramos los datos del vehiculo
         System.out.println(vereda3000.status());
-
-
-
-
     }
 
 }
