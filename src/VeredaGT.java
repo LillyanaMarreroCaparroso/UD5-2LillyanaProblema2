@@ -24,12 +24,13 @@ public class VeredaGT implements Vehicle {
     @Override
     public void recharge() {
         this.energy = MAX_ENERGY;
+        System.out.println("Bateria recargada");
     }
 
     @Override
     public void move() {
         if (energy == 0) {
-            System.out.println("El vehiculo no tiene carga en la bateria ");
+            System.out.println("El vehiculo no tiene carga en la bateria, por lo que no se puede mover ");
         } else {
             this.energy = energy - energyDelta;
             movementCount++;
@@ -39,9 +40,8 @@ public class VeredaGT implements Vehicle {
 
     @Override
     public String status() {
-        String out;
-        return out = "El vehiculo " + matricula +
-                "tiene un nivel de carga de: " + energy +
-                "y se ha movido " + movementCount + " veces";
+        return "El vehiculo " + this.matricula +
+                " \nTiene un nivel de carga de: " + this.energy +
+                "\nSe ha movido " + this.movementCount + " veces";
     }
 }

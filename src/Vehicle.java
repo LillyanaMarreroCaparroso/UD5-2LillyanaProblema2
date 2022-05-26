@@ -4,5 +4,4 @@ public interface Vehicle {
     public void recharge();
     public void move();
     public String status();
-
 }
